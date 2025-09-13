@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "aicompanion-client",
-    "slug": "aicompanion-client",
+    "name": "expo-tailwind-template",
+    "slug": "expo-tailwind-template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "aicompanionclient",
+    "scheme": "expotailwindtemplate",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
