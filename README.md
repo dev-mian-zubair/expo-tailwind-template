@@ -46,6 +46,77 @@ npm install
 npm start
 ```
 
+## Customizing the Template
+
+After cloning this template, follow these steps to customize it for your project:
+
+### 1. Update Project Identity
+
+**Update app.json:**
+```bash
+# Edit app.json and update:
+- "name": "your-app-name"
+- "slug": "your-app-slug"
+- "scheme": "yourappscheme"
+```
+
+**Update package.json:**
+```bash
+# Edit package.json and update:
+- "name": "your-project-name"
+```
+
+### 2. Replace App Icons and Splash Screen
+
+Replace the following files in `assets/images/` with your own:
+- `icon.png` (1024×1024) - App icon
+- `adaptive-icon.png` (1024×1024) - Android adaptive icon
+- `splash-icon.png` (1284×2778) - Splash screen image
+- `favicon.png` (48×48) - Web favicon
+
+### 3. Update Design System
+
+**Colors and Theme:**
+- Edit `constants/Colors.ts` to define your app's color palette
+- Modify `tailwind.config.js` to add custom colors, fonts, and spacing
+- Update `global.css` for any global styling needs
+
+**Design System Documentation:**
+- Review `DESIGN_SYSTEM.md` for current design tokens
+- Update it with your brand colors, typography, and component guidelines
+
+### 4. Customize Content
+
+**Remove Template Content:**
+- Delete demo screenshots from `assets/demo/`
+- Update `README.md` with your project's description
+- Replace placeholder content in `app/(tabs)/` screens
+- Update `components/EditScreenInfo.tsx` with your own content
+
+**Add Your Features:**
+- Create new screens in the `app/` directory
+- Add custom components to `components/`
+- Define your app's constants in `constants/`
+
+### 5. Configure Development Environment
+
+**Environment Variables:**
+```bash
+# Create .env files for different environments
+touch .env.local
+touch .env.development
+touch .env.production
+```
+
+**Git Setup:**
+```bash
+# Initialize your own git repository
+rm -rf .git
+git init
+git add .
+git commit -m "Initial commit from expo-tailwind-template"
+```
+
 ### Available Scripts
 
 - `npm start` - Start the Expo development server
